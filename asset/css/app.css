@@ -1,0 +1,196 @@
+body, html {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.logo > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 20;
+}
+
+.time {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 40;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+
+
+.nav-item {
+  color: white;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  width: 60%;
+  border-color: red;
+}
+
+h1 {
+  transform: rotate(90deg);
+  color: lightgray;
+  font-size: 4vw;
+}
+
+#main {
+  overflow: hidden;
+}
+
+.floorplan {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+}
+.booth_structure {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  background-color: rgb(240, 239, 239);
+}
+
+.nav-link {
+  padding-bottom: 0;
+
+}
+nav .navbar-nav li a{
+  color: white !important;
+  }
+
+
+
+.child {
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  height: 100px;
+}
+
+
+#past_event_gallery {
+  height: 60vh;
+}
+
+
+
+#location_side {
+  position: relative;
+  left: -5vw;
+  top: 15vh;
+}
+
+#floor_side {
+  position: relative;
+  left: -9vw;
+  top: 18vh;
+}
+
+#booth_side {
+  position: relative;
+  left: -7vw;
+  top: -4vh;
+}
+
+#event_side {
+  position: relative;
+  left: -7vw;
+  top: 3vh;
+}
+
+#participate_side {
+  position: relative;
+  left: -5vw;
+  top: 5vh;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #location_side {
+    position: relative;
+    left: -45vw;
+    top: 15vh;
+    padding-top:4vh ;
+  }
+  #floor_side {
+    position: relative;
+    left: -45vw;
+    top: 17vh;
+    padding-right: 2vw;
+    padding-bottom: 4vh;
+    padding-top:4vh ;
+
+  }
+  #booth_side {
+    position: relative;
+    left: -45vw;
+    top: 10vh;
+    padding-bottom: 4vh;
+  }
+  #event_side {
+    position: relative;
+    left: -45vw;
+    top: 10vh;
+    padding-right: 2vw;
+    padding-bottom: 5vh;
+  }
+  #participate_side {
+    position: relative;
+    left: -45vw;
+    top: -2vh;
+    padding-right: 2vw;
+    padding-bottom: 4vh;
+    padding-top: 2vh;
+
+  }
+  .navbar-toggler{
+    position: relative;
+    top: -3vh;;
+  }
+
+  .target {
+    font-size: 2vw;
+  }
+  
+
+}
+
+li{
+  list-style-type: none;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
