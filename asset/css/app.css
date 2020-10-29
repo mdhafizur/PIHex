@@ -1,6 +1,8 @@
-body, html {
+body,
+html {
   height: 100vh;
   scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .logo > img {
@@ -27,8 +29,6 @@ body, html {
   /* The width is the width of the web page */
 }
 
-
-
 .nav-item {
   color: white;
 }
@@ -54,20 +54,11 @@ h1 {
   transform: rotate(90deg);
   color: lightgray;
   font-size: 4vw;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 #main {
   overflow: hidden;
-}
-
-.floorplan {
-  overflow-x: auto;
-  overflow-y: hidden;
-
-}
-.booth_structure {
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .wrapper {
@@ -76,13 +67,10 @@ h1 {
 
 .nav-link {
   padding-bottom: 0;
-
 }
-nav .navbar-nav li a{
+nav .navbar-nav li a {
   color: white !important;
-  }
-
-
+}
 
 .child {
   flex: 1 0 21%; /* explanation below */
@@ -90,49 +78,98 @@ nav .navbar-nav li a{
   height: 100px;
 }
 
-
 #past_event_gallery {
   height: 60vh;
 }
 
-
-
 #location_side {
   position: relative;
-  left: -5vw;
+  left: -6vw;
   top: 15vh;
 }
 
 #floor_side {
   position: relative;
-  left: -9vw;
+  left: -10vw;
   top: 18vh;
 }
 
 #booth_side {
   position: relative;
-  left: -7vw;
+  left: -8vw;
   top: -4vh;
 }
 
 #event_side {
   position: relative;
-  left: -7vw;
+  left: -7.5vw;
   top: 3vh;
 }
 
 #participate_side {
   position: relative;
-  left: -5vw;
+  left: -6vw;
   top: 5vh;
 }
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  #main_section {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .logo > img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40%;
+    left: 18vw;
+  }
+
+  .time {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 40%;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    top: -10vh;
+    left: 7vw;
+  }
+
+  .target {
+    font-size: 4vw;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  #past_event_gallery{
+    padding: 0;
+  }
+
+
+  #photo_gallery {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+  #floor_plan_image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #location_side {
     position: relative;
     left: -45vw;
-    top: 15vh;
-    padding-top:4vh ;
+    top: 16vh;
+    padding-top: 4vh;
   }
   #floor_side {
     position: relative;
@@ -140,21 +177,20 @@ nav .navbar-nav li a{
     top: 17vh;
     padding-right: 2vw;
     padding-bottom: 4vh;
-    padding-top:4vh ;
-
+    padding-top: 4vh;
   }
   #booth_side {
     position: relative;
     left: -45vw;
-    top: 10vh;
+    top: 12vh;
     padding-bottom: 4vh;
   }
   #event_side {
     position: relative;
+    float: left;
     left: -45vw;
-    top: 10vh;
+    top: 30vh;
     padding-right: 2vw;
-    padding-bottom: 5vh;
   }
   #participate_side {
     position: relative;
@@ -163,34 +199,13 @@ nav .navbar-nav li a{
     padding-right: 2vw;
     padding-bottom: 4vh;
     padding-top: 2vh;
-
   }
-  .navbar-toggler{
-    position: relative;
-    top: -3vh;;
-  }
-
-  .target {
-    font-size: 2vw;
-  }
-  
-
 }
 
-li{
+li {
   list-style-type: none;
 }
 
 img:hover {
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
