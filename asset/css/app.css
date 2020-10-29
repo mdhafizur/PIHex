@@ -114,6 +114,9 @@ nav .navbar-nav li a {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .navbar {
+    
+  }
   #main_section {
     height: 100vh;
     width: 100vw;
@@ -142,6 +145,9 @@ nav .navbar-nav li a {
     top: -10vh;
     left: 7vw;
   }
+  .floorplan {
+    padding: 0 !important;
+  }
 
   .target {
     font-size: 4vw;
@@ -149,56 +155,55 @@ nav .navbar-nav li a {
     margin-right: 20px;
   }
 
-  #past_event_gallery{
-    padding: 0;
+  #location {
+    padding-bottom: 0 !important;
   }
-
+  #past_event_gallery {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 
   #photo_gallery {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-  }
-
-  #floor_plan_image {
     margin-left: auto;
     margin-right: auto;
   }
 
   #location_side {
     position: relative;
-    left: -45vw;
-    top: 16vh;
+    top: -8vh;
+    left: 30vw;
     padding-top: 4vh;
   }
   #floor_side {
     position: relative;
-    left: -45vw;
-    top: 17vh;
-    padding-right: 2vw;
-    padding-bottom: 4vh;
+    top: 0vh;
+    left: 30vw;
     padding-top: 4vh;
   }
   #booth_side {
     position: relative;
-    left: -45vw;
-    top: 12vh;
-    padding-bottom: 4vh;
+    top: -8vh;
+    left: 15vw;
+    padding-top: 0vh;
+    padding-bottom: 10px !important;
   }
+
   #event_side {
     position: relative;
     float: left;
-    left: -45vw;
-    top: 30vh;
-    padding-right: 2vw;
+    left: 10vw;
+    top: 0vh;
   }
   #participate_side {
     position: relative;
-    left: -45vw;
+    left: 0vw;
     top: -2vh;
     padding-right: 2vw;
-    padding-bottom: 4vh;
-    padding-top: 2vh;
+  }
+
+  h1 {
+    transform: none;
+    font-size: 8vw;
   }
 }
 
@@ -208,4 +213,23 @@ li {
 
 img:hover {
   cursor: pointer;
+}
+
+#navbar_new {
+  background-color: white;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar_new a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
 }

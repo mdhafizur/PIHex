@@ -13,14 +13,36 @@ function initMap() {
       map: map,
     });
 }
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
 
-lightGallery(document.getElementById('floorplan'), {
-  selector: '.item'
-});
-lightGallery(document.getElementById('booth_structure'), {
-  selector: '.item'
-});
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar_new").style.top = "0";
+  } else {
+    document.getElementById("navbar_new").style.top = "-50px";
+  }
+}
+
+// lightGallery(document.getElementById('floorplan'), {
+//   selector: '.item'
+// });
+// lightGallery(document.getElementById('booth_structure'), {
+//   selector: '.item'
+// });
 lightGallery(document.getElementById('photo_gallery'), {
   selector: '.item'
 });
 
+
+// $("a.item").fancybox({
+//   'transitionIn'	:	'elastic',
+//   'transitionOut'	:	'elastic',
+//   'speedIn'		:	600, 
+//   'speedOut'		:	200, 
+//   'overlayShow': false,
+//   'margin': 20
+// });
