@@ -56,7 +56,7 @@ html {
 
 #event_side {
   position: relative;
-  left: -8vw;
+  left: -6vw;
   top: 15vh;
 }
 
@@ -97,7 +97,7 @@ html {
 
 #participate_side {
   position: relative;
-  left: -6vw;
+  left: -7vw;
   top: 20vh;
 }
 
@@ -158,7 +158,7 @@ h1 {
 }
 
 #main {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .nav-link {
@@ -245,16 +245,16 @@ img:hover {
 
   #location_side {
     position: relative;
-    top: -20vh;
+    top: -25vh;
     left: 30vw;
   }
-  #location_info > img{
+  #location_info > img {
     width: 80%;
   }
   #location {
     position: relative;
     padding-bottom: 0 !important;
-    height: 120vh;
+    height: 110vh;
     top: 35vh;
   }
 
@@ -291,13 +291,13 @@ img:hover {
 
   #booth_structure {
     position: relative;
-    top: 160vh;
+    top: 150vh;
     background-color: rgb(240, 239, 239);
   }
 
   #booth_side {
     position: relative;
-    top: 0vh;
+    top: 5vh;
     left: 10vw;
     height: 20px;
     padding-top: 0vh;
@@ -331,8 +331,13 @@ img:hover {
   #event_side {
     position: relative;
     float: left;
-    left: 5vw;
-    top: 0vh;
+    left: 10vw;
+    top: -15vh;
+  }
+
+  #participate_side{
+    top: 10vh;
+    left: 1vw;
   }
 
   #participate {
@@ -348,7 +353,9 @@ img:hover {
 
   footer {
     position: relative;
-    top: 120vh;
+    top: 125vh;
+    left: 1vw;
+    margin-left: auto;
   }
 }
 
@@ -370,4 +377,8 @@ section {
   align-items: center;
   justify-content: center;
 }
+
+
+
+
 
