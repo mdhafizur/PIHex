@@ -9,6 +9,8 @@ html {
   height: 100vh;
   scroll-behavior: smooth;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .logo > img {
@@ -40,26 +42,6 @@ html {
   padding-top: 5px;
 }
 
-#booth_structure {
-  height: 100vh;
-}
-
-#booth_side {
-  position: relative;
-  left: -8vw;
-  top: 20vh;
-}
-
-#past_event_gallery {
-  height: 100vh;
-}
-
-#event_side {
-  position: relative;
-  left: -8vw;
-  top: 15vh;
-}
-
 #floorplan {
   position: relative;
   top: 80vh;
@@ -74,24 +56,41 @@ html {
 
 #booth_structure {
   position: relative;
+  height: 100vh;
   top: 40vh;
   background-color: rgb(240, 239, 239);
 }
 
+#booth_side {
+  position: relative;
+  left: -8vw;
+  top: 20vh;
+}
+
+
+#event_side {
+  position: relative;
+  left: -8vw;
+  top: 15vh;
+}
+
+
 #past_event_gallery {
   position: relative;
+  height: 100vh;
   top: 80vh;
   background-color: white;
 }
 
-#past_event_gallery {
-  height: 60vh;
+#photo_gallery {
+  position: relative;
+  top: -10vh;
 }
 
 #participate {
   position: relative;
   top: 100vh;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -104,12 +103,14 @@ html {
 .sponsor {
   position: relative;
   top: 100vh;
+  height: 100vh;
 }
 
 footer {
   position: relative;
-  top: 40vh;
-  right: 30vw;
+  top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .time {
@@ -189,6 +190,48 @@ img:hover {
   display: block;
   transition: top 0.3s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -304,7 +347,7 @@ img:hover {
     padding-bottom: 10px !important;
   }
   #booth_info > div.col-10.p-0.m-0 > div {
-    padding-left: 20px;
+    padding-left: 30px;
   }
   #booth_info {
     position: relative;
@@ -332,7 +375,7 @@ img:hover {
     position: relative;
     float: left;
     left: 10vw;
-    top: -15vh;
+    top: 10vh;
   }
 
   #participate_side{
@@ -347,38 +390,91 @@ img:hover {
 
   .sponsor {
     position: relative;
-    top: 180vh;
-    height: 40vh;
+    top: 200vh;
+    height: 100vh;
+  }
+
+
+  h3{
+    font-size: 7vw !important;
+  }
+
+  .grid-container ul li{
+    /* height: 200px; */
+    padding-left: 0 !important;
+    width: 80vw;
+    text-align: left;
+  } 
+
+
+
+  li{
+    font-size: 4vw;
   }
 
   footer {
     position: relative;
-    top: 125vh;
-    left: 1vw;
+    top: 5vh;
     margin-left: auto;
+    margin-right: auto;
   }
+
+  #navbar_new a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px !important;
+    text-decoration: none;
+    font-size: 10px !important;
+  }
+
+
 }
 
+
+
+
 /* All the snapping stuff */
-.scroll-container {
+/* .scroll-container {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-}
+} */
 
-section {
+/* section {
   height: 100vh;
   scroll-snap-align: center;
-}
+} */
 
 /* Other styles */
-section {
+/* section {
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+
+
+
+
+#navbar_new {
+  background-color: #333;
+  position: fixed;
+  /* top: 0px; */
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 1;
 }
 
-
-
-
+#navbar_new a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
 

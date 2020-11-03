@@ -14,9 +14,30 @@ function initMap() {
   });
 }
 
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
 
 
 lightGallery(document.getElementById('photo_gallery'), {
   selector: '.item',
 });
 
+
+
+$(document).ready(function () {
+  $("#navbar_new").hide();
+
+  $("body").scroll(function () {
+    var height = $(this).scrollTop();
+
+    if (height >= 50) {
+  $("#navbar_new").fadeIn();
+      
+    } else {
+      $("#navbar_new").fadeOut();
+
+    }
+    // console.log(height);
+  })
+});
