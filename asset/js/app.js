@@ -19,9 +19,9 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 
-lightGallery(document.getElementById('photo_gallery'), {
-  selector: '.item',
-});
+// lightGallery(document.getElementById('photo_gallery'), {
+//   selector: '.item',
+// });
 
 
 
