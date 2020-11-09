@@ -44,7 +44,7 @@ html {
 
 #floorplan {
   position: relative;
-  top: 80vh;
+  top: 10vh;
   background-color: rgb(240, 239, 239);
 }
 
@@ -57,13 +57,25 @@ html {
 #booth_structure {
   position: relative;
   height: 100vh;
-  top: 40vh;
+  top: -10vh;
   background-color: rgb(240, 239, 239);
 }
 
 #booth_side {
   position: relative;
   left: -8vw;
+  top: 20vh;
+}
+
+#booth_image{
+  position: relative;
+
+  top: 20vh;
+}
+
+#booth_info{
+  position: relative;
+
   top: 20vh;
 }
 
@@ -78,18 +90,18 @@ html {
 #past_event_gallery {
   position: relative;
   height: 100vh;
-  top: 80vh;
+  top: 10vh;
   background-color: white;
 }
 
 #photo_gallery {
   position: relative;
-  top: -10vh;
+  top: 0vh;
 }
 
 #participate {
   position: relative;
-  top: 100vh;
+  top: 10vh;
   width: 100vw;
   height: 100vh;
 }
@@ -102,13 +114,13 @@ html {
 
 .sponsor {
   position: relative;
-  top: 100vh;
-  height: 100vh;
+  top: 10vh;
+  height: auto;
 }
 
 footer {
   position: relative;
-  top: 10vh;
+  top: 20vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -197,6 +209,9 @@ img:hover {
 
 
 
+  img{
+    padding: 20px;
+  }
 
 
 
@@ -235,6 +250,11 @@ img:hover {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  
+  img{
+    padding: 0px;
+  }
+
   html {
     height: 100vh;
     scroll-behavior: smooth;
@@ -305,24 +325,24 @@ img:hover {
     font-weight: bold;
   }
   #map {
-    height: 100vh;
+    height: 40vh;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
     position: relative;
-    top: -6vh;
+    top: -20vh;
   }
 
   #floorplan {
     padding: 0 !important;
     height: 100vh;
     position: relative;
-    top: 150vh;
+    top: 15vh;
   }
 
   #floor_side {
     position: relative;
-    top: 0vh;
+    top: 5vh;
     left: 25vw;
     padding-top: 6vh;
     height: 10vh;
@@ -334,14 +354,14 @@ img:hover {
 
   #booth_structure {
     position: relative;
-    top: 150vh;
+    top: 10vh;
     background-color: rgb(240, 239, 239);
   }
 
   #booth_side {
     position: relative;
-    top: 5vh;
-    left: 10vw;
+    top: 10vh;
+    left: 15vw;
     height: 20px;
     padding-top: 0vh;
     padding-bottom: 10px !important;
@@ -352,17 +372,17 @@ img:hover {
   #booth_info {
     position: relative;
     font-size: small;
+    top: 10vh;
   }
 
   #booth_image {
     position: relative;
-    height: 30vh;
   }
   #past_event_gallery {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     position: relative;
-    top: 200vh;
+    top: 10vh;
   }
 
   #photo_gallery {
@@ -385,12 +405,13 @@ img:hover {
 
   #participate {
     position: relative;
-    top: 200vh;
+    top: 10vh;
   }
 
   .sponsor {
     position: relative;
-    top: 200vh;
+    padding-top: 20vh;
+    top: 10vh;
     height: 100vh;
   }
 
@@ -414,7 +435,6 @@ img:hover {
 
   footer {
     position: relative;
-    top: 5vh;
     margin-left: auto;
     margin-right: auto;
   }
@@ -428,6 +448,7 @@ img:hover {
     text-decoration: none;
     font-size: 10px !important;
   }
+
 
 
 }
