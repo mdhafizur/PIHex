@@ -29,7 +29,7 @@ html {
 #location_side {
   position: relative;
   left: -6vw;
-  top: 15vh;
+  top: 18vh;
 }
 
 #location {
@@ -64,28 +64,24 @@ html {
 #booth_side {
   position: relative;
   left: -8vw;
-  top: 30vh;
+  top: 22vh;
 }
 
-#booth_image{
+#booth_image {
   position: relative;
-
   top: 20vh;
 }
 
-#booth_info{
+#booth_info {
   position: relative;
-
   top: 20vh;
 }
-
 
 #event_side {
   position: relative;
   left: -8vw;
   top: 15vh;
 }
-
 
 #past_event_gallery {
   position: relative;
@@ -203,63 +199,27 @@ img:hover {
   transition: top 0.3s;
 }
 
-
-
 #floor_plan_image {
   height: 100vh;
   width: auto;
 }
 
-
-
-
-  img{
-    padding: 20px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+img {
+  padding: 20px;
+}
 
 
 
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  #main_section{
+@media (max-width: 770px) {
+  #main_section {
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
   }
-  img{
+
+  img {
     padding: 0px;
   }
 
@@ -268,6 +228,7 @@ img:hover {
     scroll-behavior: smooth;
     font-family: 'Source Sans Pro', sans-serif;
   }
+
   #main_section {
     position: relative;
     height: 100vh;
@@ -319,9 +280,11 @@ img:hover {
     top: -25vh;
     left: 30vw;
   }
+
   #location_info > img {
     width: 80%;
   }
+
   #location {
     position: relative;
     padding-bottom: 0 !important;
@@ -333,6 +296,7 @@ img:hover {
   #mall_desc {
     font-weight: bold;
   }
+
   #map {
     height: 60vh;
     /* The height is 400 pixels */
@@ -346,7 +310,7 @@ img:hover {
     padding: 0 !important;
     height: 100vh;
     position: relative;
-    top: 15vh;
+    top: 40vh;
   }
 
   #floor_side {
@@ -363,7 +327,7 @@ img:hover {
 
   #booth_structure {
     position: relative;
-    top: 10vh;
+    top: 30vh;
     background-color: rgb(240, 239, 239);
   }
 
@@ -375,23 +339,29 @@ img:hover {
     padding-top: 0vh;
     padding-bottom: 10px !important;
   }
+
   #booth_info > div.col-10.p-0.m-0 > div {
     padding-left: 30px;
   }
+
   #booth_info {
     position: relative;
     font-size: small;
     top: 10vh;
+    height: 30vh;
   }
 
   #booth_image {
     position: relative;
+    height: 20vh;
+    width: 100%;
   }
+
   #past_event_gallery {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     position: relative;
-    top: 10vh;
+    top: 30vh;
   }
 
   #photo_gallery {
@@ -407,14 +377,14 @@ img:hover {
     top: 10vh;
   }
 
-  #participate_side{
+  #participate_side {
     top: 10vh;
     left: 1vw;
   }
 
   #participate {
     position: relative;
-    top: 10vh;
+    top: 30vh;
   }
 
   .sponsor {
@@ -424,21 +394,27 @@ img:hover {
     height: 100vh;
   }
 
-
-  h3{
+  h3 {
     font-size: 7vw !important;
   }
 
-  .grid-container ul li{
+  .grid-container ul li {
     /* height: 200px; */
     padding-left: 0 !important;
     width: 80vw;
     text-align: left;
-  } 
+  }
 
+  .grid-container ul li small {
+    padding-left: 10px;
+    text-align: right !important;
+  }
 
+  #participate > div.col-md-9 > div > div > div.pt-2 > img {
+    padding: 10px;
+  }
 
-  li{
+  li {
     font-size: 4vw;
   }
 
@@ -455,40 +431,21 @@ img:hover {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 8px 8px 8px  !important;
+    padding: 20px 8px 8px 8px !important;
     text-decoration: none;
     font-size: 10px !important;
   }
-  #navbar_new{
+
+  #navbar_new {
     height: 50px;
+  }
+
+  #participate > div.col-md-9 > div > div > div:nth-child(2) > img{
+    padding: 10px;
   }
 
 
 }
-
-
-
-
-/* All the snapping stuff */
-/* .scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-} */
-
-/* section {
-  height: 100vh;
-  scroll-snap-align: center;
-} */
-
-/* Other styles */
-/* section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-
 
 
 
@@ -511,4 +468,3 @@ img:hover {
   text-decoration: none;
   font-size: 17px;
 }
-
