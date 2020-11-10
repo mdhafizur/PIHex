@@ -64,7 +64,7 @@ html {
 #booth_side {
   position: relative;
   left: -8vw;
-  top: 20vh;
+  top: 30vh;
 }
 
 #booth_image{
@@ -205,6 +205,10 @@ img:hover {
 
 
 
+#floor_plan_image {
+  height: 100vh;
+  width: auto;
+}
 
 
 
@@ -250,7 +254,11 @@ img:hover {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  
+  #main_section{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+  }
   img{
     padding: 0px;
   }
@@ -278,7 +286,7 @@ img:hover {
 
   #location_info {
     position: relative;
-    top: -20vh;
+    top: -25vh;
     text-align: center;
   }
 
@@ -318,14 +326,15 @@ img:hover {
     position: relative;
     padding-bottom: 0 !important;
     height: 110vh;
-    top: 35vh;
+    top: 0vh;
+    padding-top: 35vh !important;
   }
 
   #mall_desc {
     font-weight: bold;
   }
   #map {
-    height: 40vh;
+    height: 60vh;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
@@ -437,6 +446,8 @@ img:hover {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    height: 10vh;
+    width: 90%;
   }
 
   #navbar_new a {
@@ -444,11 +455,13 @@ img:hover {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 8px !important;
+    padding: 20px 8px 8px 8px  !important;
     text-decoration: none;
     font-size: 10px !important;
   }
-
+  #navbar_new{
+    height: 50px;
+  }
 
 
 }
