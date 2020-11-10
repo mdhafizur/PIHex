@@ -79,8 +79,9 @@ html {
 
 #event_side {
   position: relative;
-  left: -8vw;
+  left: -6vw;
   top: 15vh;
+
 }
 
 #past_event_gallery {
@@ -213,7 +214,7 @@ img {
 
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   #main_section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -498,3 +499,157 @@ img {
   text-decoration: none;
   font-size: 17px;
 }
+
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #main_section {
+    font-size: 1.5rem;
+  }
+
+  .time {
+    width: 90%;
+    height: auto;
+  }
+
+  .mat {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:0 !important;
+    text-align: center;
+    width: 90vw;
+  }
+
+  .mat li {
+    padding: 0px 0px 20px 20px !important;
+  }
+
+  #main_section > div.pt-3.pb-5.animate__animated.animate__slideInLeft.target > div > ul:nth-child(1) > li.pl-5{
+    padding-left: 28vw !important;
+  }
+
+  #location_info {
+    font-size: larger;
+    /* padding-right: 7vw; */
+    width: 100vw;
+  }
+
+  #location_info > img {
+    width: 200px;
+    height: auto;
+  }
+
+  #map {
+    height: 50%;
+    position: relative;
+    top: 15vh;
+  }
+
+  #floor_plan_image{
+    width: 70vw;
+    height: auto;
+  }
+
+  #event_side {
+    padding: 0;
+  }
+
+  #booth_image {
+    width: auto;
+    position: relative;
+    right: 10vw;
+    width: 85vw;
+  }
+
+  .item a img {
+    height: auto;
+    width: 30vw;
+  }
+
+  #photo_gallery div a  img {
+    padding: 5vh;
+  }
+
+
+}
+
+@media (width: 1024px) and (height: 1366px) { 
+  #floor_plan_image {
+    width: 70vw;
+    height: auto;
+    position: relative;
+    top: 5vh;
+  }
+
+  .time {
+    width: 80%;
+    height: auto;
+  }
+
+  .mat {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:0 !important;
+    text-align: center;
+    width: 90vw;
+  }
+
+  .mat li {
+    padding: 0px 0px 20px 20px !important;
+    font-size: 3rem;
+  }
+
+  #main_section > div.pt-3.pb-5.animate__animated.animate__slideInLeft.target > div > ul:nth-child(1) > li.pl-5{
+    padding-left: 28vw !important;
+  }
+
+  #location_info {
+    font-size: 1.5rem;
+    /* padding-right: 7vw; */
+    width: 100vw;
+    position: relative;
+    top: 20vh;
+  }
+
+  #location_info > img {
+    width: 100%;
+    height: auto;
+  }
+
+  #map {
+    height: 50%;
+    position: relative;
+    top: 25vh;
+  }
+
+  #floor_plan_image{
+    width: 70vw;
+    height: auto;
+  }
+
+  #event_side {
+    padding: 0;
+  }
+
+  #booth_image {
+    width: auto;
+    position: relative;
+    right: 10vw;
+    width: 85vw;
+  }
+
+  .item a img {
+    height: auto;
+    width: 30vw;
+  }
+
+  #photo_gallery div a  img {
+    padding: 6vh;
+  }
+
+
+}
+
