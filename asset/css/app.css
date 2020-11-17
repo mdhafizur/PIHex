@@ -34,7 +34,8 @@ html {
 }
 
 #location {
-  height: 75vh;
+  height: 80vh;
+
 }
 
 /* Set the size of the div element that contains the map */
@@ -334,7 +335,7 @@ img:hover {
     padding: 0 !important;
     height: 100vh;
     position: relative;
-    top: 55vh;
+    top: 50vh;
   }
 
   #floor_side {
@@ -405,7 +406,7 @@ img:hover {
     position: relative;
     float: left;
     left: 10vw;
-    top: 10vh;
+    top: 0vh;
   }
 
   #participate_side {
