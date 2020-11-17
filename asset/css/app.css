@@ -102,7 +102,7 @@ small {
 #past_event_gallery {
   position: relative;
   height: 70vh;
-  top: 0vh;
+  top: -5vh;
   background-color: white;
 }
 
@@ -225,6 +225,10 @@ img:hover {
 @media (max-width: 767px) {
   .sponsor div {
     padding: 0 0 0 0 !important;
+  }
+
+  #main_section > hr {
+    display: none;
   }
   #main_section {
     background-size: cover;
