@@ -79,14 +79,14 @@ small {
 #booth_structure {
   position: relative;
   height: 100vh;
-  top: -10vh;
+  top: 25vh;
   background-color: rgb(240, 239, 239);
 }
 
 #booth_side {
   position: relative;
   left: -8vw;
-  top: 22vh;
+  top: 30vh;
 }
 
 #booth_image {
@@ -109,7 +109,7 @@ small {
 #past_event_gallery {
   position: relative;
   height: 70vh;
-  top: -5vh;
+  top: 20vh;
   background-color: white;
 }
 
@@ -129,6 +129,7 @@ small {
   position: relative;
   width: 100vw;
   height: 80vh;
+  top: 20vh;
 }
 
 #participate_side {
@@ -139,7 +140,7 @@ small {
 
 .sponsor {
   position: relative;
-  top: 10vh;
+  top: 25vh;
   height: auto;
 }
 
